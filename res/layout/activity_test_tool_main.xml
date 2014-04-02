@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true" >
+ 
+    <Spinner
+        android:id="@+id/spinnerAroApi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/aro_api_spinner"
+        android:prompt="@string/api_prompt" />
+
+    <Button
+        android:id="@+id/btnNextTC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSubmit"
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_marginLeft="73dp"
+        android:layout_toRightOf="@+id/btnSubmit"
+        android:text="Next TC" />
+
+    <TextView
+        android:id="@+id/editInputParameters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnNextTC"
+        android:ems="10"
+        android:lines="30"
+        android:maxHeight="@dimen/activity_horizontal_margin"
+        android:maxLines="200"
+        android:scrollHorizontally="false"
+        android:text="Logs:" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spinnerAroApi"
+        android:layout_marginLeft="30dp"
+        android:text="Submit" />
+ 
+</RelativeLayout>
