@@ -27,7 +27,7 @@ static List<TestCaseData> uploadObservations_testCases() {
 	//String theFullTime = "2014-03-05T22:00:00.000Z";
 
 	int hour = 18;
-	int min = 0;
+	int min = 1;
 	int timeInterval=14;
 	
 	String theDate = "2014-04-02T";	
