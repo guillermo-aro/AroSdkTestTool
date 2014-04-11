@@ -27,6 +27,16 @@ public class TestCasesPlace {
 	} 		
 	
 	
+	public static List<TestCaseData> getRecentPlaces_TestCases() {
+		
+		List<TestCaseData> testValues = new ArrayList<TestCaseData>();
+	
+		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("This Method doesn't take parameters")),"Returns all user's visited places on last 7 days", new String[] {"87d19858-c36a-43c1-881c-73dd7e606f2d","QA UPDATED PLACE NAME ONE"}));
+		
+		return testValues;		
+	}		
+	
+	
 	public static List<TestCaseData> getAllFavorites_TestCases() {
 		
 		List<TestCaseData> testValues = new ArrayList<TestCaseData>();
@@ -135,19 +145,19 @@ public class TestCasesPlace {
 
 		
 //DEV01	
-/*		
+		
 		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("33867974-82bc-4b2b-a65e-54ecb2227103")),"Good Place ID from where the user DOES go.", new String[] {"QA_Place01_QA","200"}));
 		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("fed373fc-b202-4afc-b6e3-1ce466487ff6")),"Place ID from where the user DOESN'T goes/hasn't been.", new String[] {"QA_Place01_QA","200"}));
 		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("DOESNOTE-XIST-4b2b-a65e-54ecb2227103")),"Inexistent Place ID", new String[] {"QA_Place01_QA","200"}));
-*/		
+		
 		
 		
 //DEV0 
-
+/*
 		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("33867974-82bc-4b2b-a65e-54ecb2227103")),"Good Place ID from where the user DOES go.", new String[] {"QA_Place01_QA","200"}));
 		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("fed373fc-b202-4afc-b6e3-1ce466487ff6")),"Place ID from where the user DOESN'T goes/hasn't been.", new String[] {"QA_Place01_QA","200"}));
 		testValues.add(new TestCaseData(i++, new ArrayList<String>(Arrays.asList("DOESNOTE-XIST-4b2b-a65e-54ecb2227103")),"Inexistent Place ID", new String[] {"QA_Place01_QA","200"}));
-
+*/
 		return testValues;	
 }		
 		
