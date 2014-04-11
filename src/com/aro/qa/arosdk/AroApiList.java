@@ -20,6 +20,7 @@ public class AroApiList {
 	    public static final int PLACE_SEARCH_FOR_PLACES_NAME=13;
 	    public static final int PLACE_SEARCH_FOR_PLACES_CATEGORY_NAME=14;
 	    public static final int PLACE_SEARCH_FOR_PLACES_RADIUS=15;
+	    public static final int PLACE_GET_RECENT_PLACES=16; 
 	      
 	    public static final int CATEGORY_API=20;
 	    public static final int CATEGORY_GET_BY_NAME=21;
