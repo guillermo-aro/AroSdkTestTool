@@ -124,12 +124,36 @@ public class QaPlaceApi extends AsyncTask<Integer, Void,Void>{
 			searchForPlacesPRadius_test();
 			break;	
 
+		case AroApiList.PLACE_GET_RECENT_PLACES:
+			getRecentPlaces_test();
+			break;				
+			
 		}
 
 		return null;
 	}
 
 
+	
+	void getRecentPlaces_test(){
+
+		List<TestCaseData> testValues = TestCasesPlace.getRecentPlaces_TestCases();
+
+		for (TestCaseData theTestCase : testValues){
+
+			qaHelper.qaLogs("=====   placeAPI.getRecentPlaces   =====");
+			qaHelper.qaLogs("Test Case # " + theTestCase.getTestCaseNumber() + ". " + theTestCase.getTestCaseDescription() + ".");
+			mOneTestCase = theTestCase;
+			
+			try {				
+				placeAPI.getRecentPlaces(mContext,webListenerPlace);		
+				Thread.sleep(1000);		
+			}catch (Exception e) {
+				qaHelper.qaLogs("placeAPI.getRecentPlaces_test Exception="+e);
+			}
+		}		
+	}	
+	
 
 	/***
 	 * 
