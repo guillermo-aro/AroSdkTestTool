@@ -160,10 +160,12 @@ public class QaAroApi{
 				break;
 				
 			case AroApiList.PLACE_SEARCH_FOR_PLACES_RADIUS:
-//				qaPlaceApi.searchForPlacesPRadius_test();
 				qaPlaceApi.execute(AroApiList.PLACE_SEARCH_FOR_PLACES_RADIUS);
-				break;				
-				
+				break;	
+	
+			case AroApiList.PLACE_GET_RECENT_PLACES:
+				qaPlaceApi.execute(AroApiList.PLACE_GET_RECENT_PLACES);
+				break;					
 
 //////////////////				
 								
